@@ -1,0 +1,7 @@
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\bin\Debug\CarDealerShip.exe.config
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\bin\Debug\CarDealerShip.exe
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\bin\Debug\CarDealerShip.pdb
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\obj\Debug\CarDealerShip.csprojResolveAssemblyReference.cache
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\obj\Debug\CarDealerShip.csproj.CoreCompileInputs.cache
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\obj\Debug\CarDealerShip.exe
+C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShip\obj\Debug\CarDealerShip.pdb
