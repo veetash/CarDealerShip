@@ -17,17 +17,6 @@ namespace CarDealerShipForms
         public Main()
         {
             Base = new Base();
-            Base.Cars.Add(new Car()
-            {
-                Name = "Skoda",
-                Model = "Octavia",
-                VIN = "MISHA2019DOWN1999",
-                Manufacted = new DateTime(2015, 01, 01),
-                EngineVolume = 1.8,
-                HorsePower = 180,
-                Drive = Drive.FWD,
-                Transmission = Transmission.Manual
-            });
             InitializeComponent();
             CarsListBox.DataSource = Base.Cars;
         }
@@ -71,6 +60,39 @@ namespace CarDealerShipForms
                 var item = (Car)CarsListBox.Items[index];
                 var form = new AddService(item);
                 form.ShowDialog();
+            }
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            var index = CarsListBox.SelectedIndex;
+            if (index >= 0 && Base.Cars.Count > 0 && CarsListBox.GetSelected(index))
+            {
+                var car = (Car)CarsListBox.Items[index];
+                var ec = new EditCar(car, CarsListBox, Base.Cars);
+                ec.ShowDialog();
+            }
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            var index = CarsListBox.SelectedIndex;
+            if (index >= 0 && Base.Cars.Count > 0 && CarsListBox.GetSelected(index))
+            {
+                var car = (Car)CarsListBox.Items[index];
+                Base.Cars.Remove(car);
+
+                CarsListBox.DataSource = null;
+                CarsListBox.DataSource = Base.Cars;
+                
+                NameLb.Visible = false;
+                ModelLb.Visible = false;
+                VINLb.Visible = false;
+                ManufactedLb.Visible = false;
+                HorsePowerLb.Visible = false;
+                EngVolumeLb.Visible = false;
+                TransmissionLb.Visible = false;
+                DriveLgbt.Visible = false;
             }
         }
     }

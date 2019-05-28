@@ -37,8 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SeriousCb = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ServiceListBox
@@ -124,22 +122,11 @@
             this.SeriousCb.Text = "Серьёзное ДТП";
             this.SeriousCb.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = global::CarDealerShipForms.Properties.Resources.misha;
-            this.pictureBox1.Image = global::CarDealerShipForms.Properties.Resources.misha;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 55);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
             // AddService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 468);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SeriousCb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -153,7 +140,6 @@
             this.MinimumSize = new System.Drawing.Size(673, 507);
             this.Name = "AddService";
             this.Text = "AddService";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,6 +156,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox SeriousCb;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -13,3 +13,19 @@ C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShipForms\bin\Debug\Ca
 C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShip.pdb
 C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShip.exe.config
 C:\Users\Стасик\source\repos\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.AddService.resources
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShipForms.exe.config
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShipForms.exe
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShipForms.pdb
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShip.exe
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShip.pdb
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\bin\Debug\CarDealerShip.exe.config
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.csprojResolveAssemblyReference.cache
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.AddCar.resources
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.AddService.resources
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.Main.resources
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.Properties.Resources.resources
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.csproj.GenerateResource.Cache
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.csproj.CoreCompileInputs.cache
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.exe
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.pdb
+C:\Users\Стасик\Desktop\Bug development\CarDealerShip\CarDealerShipForms\obj\Debug\CarDealerShipForms.EditCar.resources

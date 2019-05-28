@@ -45,8 +45,6 @@
             this.DriveCb = new System.Windows.Forms.ComboBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.YearDp = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // NameTb
@@ -200,21 +198,11 @@
             this.YearDp.Size = new System.Drawing.Size(430, 20);
             this.YearDp.TabIndex = 18;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarDealerShipForms.Properties.Resources.misha;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 357);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 50);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
             // AddCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 419);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.YearDp);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DriveCb);
@@ -237,7 +225,6 @@
             this.Name = "AddCar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddCar";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,6 +249,5 @@
         private System.Windows.Forms.ComboBox DriveCb;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.DateTimePicker YearDp;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
