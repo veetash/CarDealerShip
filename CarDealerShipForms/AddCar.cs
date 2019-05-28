@@ -25,19 +25,13 @@ namespace CarDealerShipForms
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            var condititon1 = double.TryParse(VolumeTb.Text, out double d);
-            var condititon2 = int.TryParse(PowerTb.Text, out int i);
-
-
             if (NameTb.Text != "" &&
                 ModelTb.Text != "" &&
                 BinTb.Text != "" &&
                 VolumeTb.Text != "" &&
                 PowerTb.Text != "" &&
                 TransCb.Text != "" &&
-                DriveCb.Text != "" &&
-                condititon1 &&
-                condititon2)
+                DriveCb.Text != "")
             {
                 var car = new Car()
                 {
@@ -45,7 +39,7 @@ namespace CarDealerShipForms
                     Model = ModelTb.Text,
                     VIN = BinTb.Text,
                     Manufacted = YearDp.Value,
-                    EngineVolume = double.Parse(VolumeTb.Text, CultureInfo.InvariantCulture),
+                    EngineVolume = ParseToDoble(VolumeTb.Text),
                     HorsePower = int.Parse(PowerTb.Text),
                     Transmission = GetTransmission(TransCb.Text),
                     Drive = GetDrive(DriveCb.Text)
@@ -62,6 +56,20 @@ namespace CarDealerShipForms
             {
                 MessageBox.Show("Заполните все поля корректно!");
             }
+        }
+
+        private double ParseToDoble(string str)
+        {
+            var result = str;
+            foreach (var c in str)
+            {
+                if (c == '.')
+                {
+                    result = str.Replace('.', ',');
+                    break;
+                }
+            }
+            return double.Parse(result);
         }
 
         private Transmission GetTransmission(string text)
