@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CarDealerShip;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace CarDealerShipForms
 {
@@ -93,6 +95,42 @@ namespace CarDealerShipForms
                 EngVolumeLb.Visible = false;
                 TransmissionLb.Visible = false;
                 DriveLgbt.Visible = false;
+            }
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var sfd = new SaveFileDialog() { Filter = "Автомобили|*.cars" };
+
+            if (sfd.ShowDialog(this) == DialogResult.OK)
+            {
+                var data = new Base();
+                data = Base;
+
+                var stream = new MemoryStream();
+                var xs = new XmlSerializer(typeof(Base));
+                var file = File.Create(sfd.FileName);
+
+                xs.Serialize(file, data);
+                file.Close();
+            }
+        }
+
+        private void загрузитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ofd = new OpenFileDialog() { Filter = "Автомобили|*.cars" };
+
+            if (ofd.ShowDialog(this) == DialogResult.OK)
+            {
+                var xs = new XmlSerializer(typeof(Base));
+                var file = File.OpenRead(ofd.FileName);
+                var data = (Base)xs.Deserialize(file);
+                file.Close();
+
+                Base = data;
+
+                CarsListBox.DataSource = null;
+                CarsListBox.DataSource = Base.Cars;
             }
         }
     }

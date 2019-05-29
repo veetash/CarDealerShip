@@ -28,8 +28,8 @@ namespace CarDealerShipForms
             if (NameTb.Text != "" &&
                 ModelTb.Text != "" &&
                 BinTb.Text != "" &&
-                VolumeTb.Text != "" &&
-                PowerTb.Text != "" &&
+                VolumeTb.Text != "" && double.TryParse(VolumeTb.Text, out double n) &&
+                PowerTb.Text != "" && int.TryParse(PowerTb.Text, out int k) &&
                 TransCb.Text != "" &&
                 DriveCb.Text != "")
             {
